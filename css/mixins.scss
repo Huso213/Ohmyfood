@@ -1,0 +1,34 @@
+@mixin coeur{
+    
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /*prend la forme du coeur*/
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    background-image: linear-gradient($rose, $violet);
+  
+    &:hover {
+      opacity: 1;
+      transform: translate(0%);
+    }
+  }
+  
+
+  @mixin btn{
+  background: linear-gradient($rose, $violet);
+  cursor: pointer;
+  display: flex;
+  font-size: 1.1rem;
+  border-radius: 35px;
+  text-align: center;
+  align-items: center;
+
+  
+    &:hover {
+      transform: scale(1.05);
+      transition-duration: 200ms;
+      /*Temps d'agrandissement */
+      box-shadow: 0 5px 5px 5px lightgray;
+    }
+  }
