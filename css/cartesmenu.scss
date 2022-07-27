@@ -262,7 +262,7 @@ div.description {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
-  margin: 0 15px 10px 15px;
+  margin: 10px 15px 10px 15px;
   width: 100%;
 }
 
@@ -302,7 +302,7 @@ justify-content:space-between;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 0 2rem;
+  padding: 0 2rem 0 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -315,7 +315,7 @@ margin: 0;
   align-items: center;
   background-color: $vert;
   width: 80px;
-  height: 85px;
+  height: 95px;
   border-radius: 0 15px 15px 0 ;
   position: absolute;
   padding: 20px;
