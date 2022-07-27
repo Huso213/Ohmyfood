@@ -304,18 +304,21 @@ div.description_desc {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .check {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
   width: 80px;
-  height: 100px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  height: 85px;
+  border-radius: 0 15px 15px 0;
   position: absolute;
   padding: 20px;
   right: -51px;
@@ -326,6 +329,9 @@ div.description_desc {
 .check .fa-check-circle {
   color: #fff;
   font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 500ms ease-in-out;
 }
 
