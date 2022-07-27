@@ -271,6 +271,17 @@ div.description {
   width: 80%;
 }
 
+div.description_desc {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+  margin: 0 15px 0 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .description h3 {
   margin: 0;
   width: auto;
@@ -419,7 +430,6 @@ a {
     margin: 0;
     background-color: white;
     height: 70px;
-    border: solid;
   }
   .conteneur a.titre {
     margin: 0;
