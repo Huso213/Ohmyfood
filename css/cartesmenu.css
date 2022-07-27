@@ -267,8 +267,8 @@ div.description {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
-  margin: 0 15px 0 12px;
-  width: 80%;
+  margin: 0 15px 10px 15px;
+  width: 100%;
 }
 
 div.description_desc {
@@ -276,7 +276,7 @@ div.description_desc {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
-  margin: 0 15px 0 12px;
+  margin: 0 15px 0 0px;
   width: 100%;
   display: flex;
   justify-content: space-between;

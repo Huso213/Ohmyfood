@@ -9,6 +9,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Roboto', 'sans-serif';
+
 }
 
 /*NavBar*/
@@ -241,7 +242,6 @@ div.restaurant img {
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
-
   &:hover {
     padding-right: 75px;
   }
@@ -262,8 +262,8 @@ div.description {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
-  margin: 0 15px 0 12px;
-  width: 80%;
+  margin: 0 15px 10px 15px;
+  width: 100%;
 }
 
 div.description_desc{
@@ -271,10 +271,11 @@ div.description_desc{
 text-overflow: ellipsis;
 overflow: hidden;
 flex: 1;
-margin: 0 15px 0 12px;
+margin: 0 15px 0 0px;
 width: 100%;
 display:flex;
 justify-content:space-between;
+
 }
 
 
