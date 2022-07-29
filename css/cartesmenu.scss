@@ -13,15 +13,16 @@
 }
 
 /*NavBar*/
-.conteneur{
+.conteneur {
   position: relative;
   background-color: white;
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
-.conteneur a{
+
+.conteneur a {
   text-decoration: none;
   color: black;
   display: flex;
@@ -30,12 +31,12 @@
 
 /*fleche*/
 
-.conteneur a.fleche{
- position:sticky ;
+.conteneur a.fleche {
+  position: sticky;
 
 }
 
-.fas.fa-arrow-left{
+.fas.fa-arrow-left {
   margin: 20px 0 0 10px;
   font-size: 2em;
   display: flex;
@@ -48,9 +49,9 @@
 
 /* titre OHMYFOOD*/
 
-.conteneur a.titre{
+.conteneur a.titre {
   width: 100%;
-position: absolute;
+  position: absolute;
 
 }
 
@@ -209,7 +210,7 @@ div.restaurant img {
 .entrees,
 .plats,
 .desserts {
-  width: 35%;
+  width: 30%;
   margin: 0 1% 0 1%;
 
 }
@@ -219,7 +220,7 @@ div.restaurant img {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 1em;
+
 }
 
 .blockmenu h2 {
@@ -232,10 +233,9 @@ div.restaurant img {
 /*cartes menu entrees*/
 
 .cartes {
-  background-color:white;
+  background-color: white;
   border-radius: 15px;
-  margin: 10px 0 30px 0;
-  padding: 10px;
+  width: auto;
   box-shadow: 0.3em 0.3em 1em rgb(0, 0, 0, 0.2);
   position: relative;
   cursor: pointer;
@@ -243,6 +243,9 @@ div.restaurant img {
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
+  margin: 10px 0 30px 0;
+  padding: 10px;
+
   &:hover {
     padding-right: 75px;
   }
@@ -257,45 +260,40 @@ div.restaurant img {
   }
 }
 
-
 div.description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-  margin: 10px 15px 10px 15px;
+  margin: 0 15px 0 12px;
   width: 100%;
-}
-
-div.description_desc{
-  white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;
-flex: 1;
-margin: 0 15px 0 0px;
-width: 100%;
-display:flex;
-justify-content:space-between;
 
 }
+
+div.description_desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
 
 
 .description h3 {
   margin: 0;
-  width: auto;
   font-size: 1.3em;
   font-weight: 700;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
+
 }
 
-.description p {
-  margin: 10px 0 0 0;
+.description_desc,
+p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
 
+  margin: 10px 0 0 0;
 }
 
 .prix {
@@ -303,28 +301,29 @@ justify-content:space-between;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 0 2rem 0 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  padding: 0 1rem;
+
 }
 
 .check {
-margin: 0;
+  border: solid;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $vert;
   width: 80px;
-  height: 95px;
-  border-radius: 0 15px 15px 0 ;
+  height: 85px;
+  border-radius: 0 15px 15px 0;
   position: absolute;
   padding: 20px;
   right: -51px;
   top: 0;
   opacity: 0;
   transition: transform 330ms ease-in-out;
-  
+&:hover{
+  margin: 0 0 0 1em;
+}
 
   & .fa-check-circle {
     color: #fff;
@@ -333,6 +332,7 @@ margin: 0;
     justify-content: center;
     align-items: center;
     transition: transform 500ms ease-in-out;
+    width: auto;
   }
 }
 
@@ -380,6 +380,7 @@ div.commander input {
   font-family: Shrikhand;
   margin: 20px 0 20px 0;
 }
+
 .footerdescription,
 a {
   color: white;
@@ -419,9 +420,10 @@ a {
     width: 100%;
 
   }
-.cartes{
-  margin: 10px 5px 30px -10px;
-}
+
+  .cartes {
+    margin: 10px 5px 30px -10px;
+  }
 
 }
 
@@ -431,15 +433,16 @@ a {
 
 
   /*NAVBAR*/
-  .conteneur{
+  .conteneur {
     margin: 0;
     background-color: white;
     height: 70px;
   }
-.conteneur a.titre{
-  margin: 0;
-  font-size: 0.8em;
-}
+
+  .conteneur a.titre {
+    margin: 0;
+    font-size: 0.8em;
+  }
 
   /*fleche*/
   .fas.fa-arrow-left {
@@ -448,7 +451,7 @@ a {
     justify-content: center;
   }
 
- 
+
 
   /*Carte menu*/
   div.restaurant img {
@@ -551,15 +554,17 @@ a {
     overflow: hidden;
     cursor: pointer;
     width: 90%;
+
   }
 
   /*polices des cartes*/
-  div.description {
+  .description_de div.description {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     flex: 1;
     margin: 0;
+    border: solid;
   }
 
   .description h3 {

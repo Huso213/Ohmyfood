@@ -218,7 +218,7 @@ div.restaurant img {
 .entrees,
 .plats,
 .desserts {
-  width: 35%;
+  width: 30%;
   margin: 0 1% 0 1%;
 }
 
@@ -227,7 +227,6 @@ div.restaurant img {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 1em;
 }
 
 .blockmenu h2 {
@@ -241,8 +240,7 @@ div.restaurant img {
 .cartes {
   background-color: white;
   border-radius: 15px;
-  margin: 10px 0 30px 0;
-  padding: 10px;
+  width: auto;
   box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
   position: relative;
   cursor: pointer;
@@ -250,6 +248,8 @@ div.restaurant img {
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
+  margin: 10px 0 30px 0;
+  padding: 10px;
 }
 .cartes:hover {
   padding-right: 75px;
@@ -263,20 +263,11 @@ div.restaurant img {
 }
 
 div.description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-  margin: 10px 15px 10px 15px;
+  margin: 0 15px 0 12px;
   width: 100%;
 }
 
 div.description_desc {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-  margin: 0 15px 0 0px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -284,19 +275,21 @@ div.description_desc {
 
 .description h3 {
   margin: 0;
-  width: auto;
   font-size: 1.3em;
   font-weight: 700;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
 }
 
-.description p {
-  margin: 10px 0 0 0;
+.description_desc,
+p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
+  margin: 10px 0 0 0;
 }
 
 .prix {
@@ -304,20 +297,18 @@ div.description_desc {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 0 2rem 0 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  padding: 0 1rem;
 }
 
 .check {
+  border: solid;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
   width: 80px;
-  height: 95px;
+  height: 85px;
   border-radius: 0 15px 15px 0;
   position: absolute;
   padding: 20px;
@@ -326,6 +317,9 @@ div.description_desc {
   opacity: 0;
   transition: transform 330ms ease-in-out;
 }
+.check:hover {
+  margin: 0 0 0 1em;
+}
 .check .fa-check-circle {
   color: #fff;
   font-size: 1.7em;
@@ -333,6 +327,7 @@ div.description_desc {
   justify-content: center;
   align-items: center;
   transition: transform 500ms ease-in-out;
+  width: auto;
 }
 
 /*Bouton commander*/
@@ -529,12 +524,13 @@ a {
     width: 90%;
   }
   /*polices des cartes*/
-  div.description {
+  .description_de div.description {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     flex: 1;
     margin: 0;
+    border: solid;
   }
   .description h3 {
     margin: 0;
