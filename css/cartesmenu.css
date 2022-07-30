@@ -97,7 +97,7 @@ div.restaurant img {
 }
 
 .titre h1 {
-  margin: 30px 0 30px 30px;
+  margin: 30px 0 30px 45px;
   font-size: 1.7em;
   font-weight: 900;
   font-family: "Shrikhand", "sans-serif";
@@ -109,12 +109,17 @@ div.restaurant img {
   width: 10%;
   align-items: center;
   justify-content: space-between;
+  margin: 0 0 0 50px;
 }
 
 .coeur i {
   font-size: 2em;
   position: absolute;
   transform: translateY(0%);
+}
+
+.far.fa-heart {
+  margin: 0 0 0 45px;
 }
 
 .fas.fa-heart {
