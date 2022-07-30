@@ -300,7 +300,7 @@ span.prix {
   align-items: flex-end;
   padding: 0 1rem;
   margin: 0 15px 5px 0;
-  
+
 }
 
 
@@ -398,24 +398,28 @@ a {
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Version Tablette*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 @media all and (max-width: 998px) {
-/*image de la page d'accueil*/
+
+  /*image de la page d'accueil*/
   div.restaurant img {
     margin: -250px 0 -80px 0;
     width: 100%;
     object-fit: cover;
   }
+
   /*titre avec coeur*/
 
   .titre h1 {
     margin: 30px 0 30px 60px;
     font-size: 1.7em;
-}
-.coeur{
-  margin: 0 10px 0 0;
-}
-/*block cartes repas */
+  }
+
+  .coeur {
+    margin: 0 10px 0 0;
+  }
+
+  /*block cartes repas */
   .blockmenu {
-     display: flex;
+    display: flex;
     flex-direction: column;
     width: 90%;
   }
@@ -431,12 +435,14 @@ a {
     width: 99%;
     margin: 10px 0 30px 0;
   }
+
   .description_desc {
     margin: 0 0 10px 0;
   }
-.footerdescription{
-  margin: 0 0 20px 55px;
-}
+
+  .footerdescription {
+    margin: 0 0 20px 55px;
+  }
 }
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Version Portable*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
@@ -490,6 +496,7 @@ a {
   .titre h1 {
     font-size: 1.7em;
     font-weight: 900;
+    margin: 30px 0 30px 30px;
     font-family: "Shrikhand", "sans-serif";
   }
 
@@ -552,7 +559,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   /*cartes marges*/
@@ -569,14 +575,12 @@ a {
   }
 
   /*polices des cartes*/
-  .description_de div.description {
-    border: solid;
+  .description_desc div.description {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     flex: 1;
     margin: 0;
-    border: solid;
   }
 
   .description h3 {
@@ -586,7 +590,6 @@ a {
     text-overflow: ellipsis;
     overflow: hidden;
     font-size: 1.4em;
-
   }
 
   .description p {
@@ -605,8 +608,7 @@ a {
     justify-content: flex-end;
     align-items: flex-end;
     margin: 10px 15px 0 0;
-    padding:0 1rem ;
-
+    padding: 0 1rem;
   }
 
 
@@ -620,15 +622,16 @@ a {
       transition-duration: 0.5s;
     }
   }
+
   /*hauteur du chek pour adapter a la taille de la carte*/
-.check{
-  border: solid;
-  height: 100px;
+  .check {
+    height: 101px;
     width: 90px;
-    margin: 0  0 0 10px;
-}
+    margin: 0 0 0 10px;
+  }
+
   div.check i {
-  
+
     color: white;
     display: flex;
     align-items: center;
@@ -671,7 +674,7 @@ a {
   }
 
   .footerdescription {
-    margin: 0 0 30px 30px;
+    margin: 0 0 30px 35px;
     align-items: flex-start;
     display: flex;
 
