@@ -263,7 +263,7 @@ div.restaurant img {
 }
 
 div.description {
-  margin: 0 15px 0 12px;
+  margin: 10px 15px 0 12px;
   width: 100%;
 }
 
@@ -274,13 +274,12 @@ div.description_desc {
 }
 
 .description h3 {
-  margin: 0;
+  margin: 0 1em 0 0;
   font-size: 1.3em;
   font-weight: 700;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 100%;
 }
 
 .description_desc,
@@ -288,27 +287,26 @@ p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 100%;
-  margin: 10px 0 0 0;
+  margin: 7px 0 7px 0;
 }
 
-.prix {
+span.prix {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0 1rem;
+  margin: 0 15px 5px 0;
 }
 
 .check {
-  border: solid;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  width: 80px;
-  height: 85px;
+  width: 90px;
+  height: 103px;
   border-radius: 0 15px 15px 0;
   position: absolute;
   padding: 20px;
@@ -316,9 +314,6 @@ p {
   top: 0;
   opacity: 0;
   transition: transform 330ms ease-in-out;
-}
-.check:hover {
-  margin: 0 0 0 1em;
 }
 .check .fa-check-circle {
   color: #fff;
@@ -404,16 +399,26 @@ a {
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*MEDIA QUERY*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Version Tablette*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 @media all and (max-width: 998px) {
+  /*image de la page d'accueil*/
   div.restaurant img {
     margin: -250px 0 -80px 0;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  /*titre avec coeur*/
+  .titre h1 {
+    margin: 30px 0 30px 60px;
+    font-size: 1.7em;
+  }
+  .coeur {
+    margin: 0 10px 0 0;
+  }
+  /*block cartes repas */
   .blockmenu {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
   .entrees,
 .plats,
@@ -421,7 +426,14 @@ a {
     width: 100%;
   }
   .cartes {
-    margin: 10px 5px 30px -10px;
+    width: 99%;
+    margin: 10px 0 30px 0;
+  }
+  .description_desc {
+    margin: 0 0 10px 0;
+  }
+  .footerdescription {
+    margin: 0 0 20px 55px;
   }
 }
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Version Portable*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
@@ -514,7 +526,6 @@ a {
   /*cartes marges*/
   div.cartes {
     background-color: white;
-    padding: 1em;
     display: flex;
     border-radius: 15px;
     margin: 1rem 0;
@@ -525,6 +536,7 @@ a {
   }
   /*polices des cartes*/
   .description_de div.description {
+    border: solid;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -533,7 +545,7 @@ a {
     border: solid;
   }
   .description h3 {
-    margin: 0;
+    margin: 0 1em 0 0;
     width: auto;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -548,12 +560,13 @@ a {
     font-size: 1.2em;
     font-weight: 300;
   }
-  .prix {
+  span.prix {
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 1rem;
+    margin: 10px 15px 0 0;
+    padding: 0 1rem;
   }
   .fas.fa-check-circle {
     font-size: 1.7em;
@@ -564,9 +577,14 @@ a {
     transform: rotate(360deg);
     transition-duration: 0.5s;
   }
+  /*hauteur du chek pour adapter a la taille de la carte*/
+  .check {
+    border: solid;
+    height: 100px;
+    width: 90px;
+    margin: 0 0 0 10px;
+  }
   div.check i {
-    height: 1.6rem;
-    width: 1.9rem;
     color: white;
     display: flex;
     align-items: center;
