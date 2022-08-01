@@ -91,25 +91,27 @@ div.restaurant img {
 
 /*Titres*/
 .titre {
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
+  border: solid;
 }
 
 .titre h1 {
-  margin: 30px 0 30px 45px;
+  padding: 1em;
   font-size: 1.7em;
   font-weight: 900;
   font-family: "Shrikhand", "sans-serif";
+  width: 96%;
 }
 
 /*Coeur*/
 .coeur {
   display: flex;
-  width: 10%;
+  width: 4%;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 0 0 50px;
+  justify-content: center;
+  margin: 0 35px 0 0;
 }
 
 .coeur i {
@@ -119,7 +121,7 @@ div.restaurant img {
 }
 
 .far.fa-heart {
-  margin: 0 0 0 45px;
+  margin: 0;
 }
 
 .fas.fa-heart {
