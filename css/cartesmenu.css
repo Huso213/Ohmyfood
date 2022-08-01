@@ -90,7 +90,7 @@ div.restaurant img {
 }
 
 /*Titres*/
-.titre {
+div.titre {
   width: 98%;
   display: flex;
   justify-content: space-between;
@@ -413,15 +413,24 @@ a {
        object-fit: cover;
   }
   /*titre avec coeur*/
+  div.titre {
+    border: solid red 1px;
+    width: 100%;
+  }
   .titre h1 {
-    margin: 30px 0 30px 60px;
+    margin: 30px 0 30px 55px;
     font-size: 1.7em;
+    padding: 0;
+    width: 85%;
+    border: solid green;
   }
   .coeur {
-    margin: 0 10px 0 0;
+    border: green 1px solid;
+    width: 20%;
+    margin: 0 10px 0 10px;
   }
   .far.fa-heart {
-    margin: 0 0 0 0px;
+    margin: 0 0 0 0;
   }
   /*block cartes repas */
   .blockmenu {
@@ -476,18 +485,25 @@ a {
     width: 100%;
   }
   /*titre accueil*/
-  .titre {
+  div.titre {
     margin: 0 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .titre h1 {
     font-size: 1.7em;
     font-weight: 900;
-    margin: 30px 0 30px 30px;
+    margin: 30px 0 30px -40px;
     font-family: "Shrikhand", "sans-serif";
+    width: 78%;
+    display: flex;
+    justify-content: flex-start;
   }
   /*Coeur*/
   .coeur {
-    margin: 0 0 0 0;
+    margin: 0 0px 0 0;
+    width: 5px;
   }
   .coeur i {
     font-size: 1.7em;

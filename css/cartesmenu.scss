@@ -100,7 +100,7 @@ div.restaurant img {
 }
 
 /*Titres*/
-.titre {
+div.titre {
   width: 98%;
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@ div.restaurant img {
 }
 
 .titre h1 {
-  padding:1em;
+  padding: 1em;
   font-size: 1.7em;
   font-weight: 900;
   font-family: "Shrikhand", "sans-serif";
@@ -121,7 +121,7 @@ div.restaurant img {
   display: flex;
   width: 4%;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   margin: 0 35px 0 0;
 }
 
@@ -130,11 +130,13 @@ div.restaurant img {
   position: absolute;
   transform: translateY(0%);
 }
-.far.fa-heart{
-  margin: 0 ;
+
+.far.fa-heart {
+  margin: 0;
 }
+
 .fas.fa-heart {
-  
+
   @include coeur();
 }
 
@@ -413,17 +415,26 @@ a {
   }
 
   /*titre avec coeur*/
-
+div.titre{
+  border: solid red 1px;
+  width: 100%;
+}
   .titre h1 {
-    margin: 30px 0 30px 60px;
+    margin: 30px 0 30px 55px;
     font-size: 1.7em;
+    padding: 0;
+    width: 85%;
+    border: solid green;
   }
 
   .coeur {
-    margin: 0 10px 0 0;
+    border: green 1px solid;
+    width: 20%;
+    margin: 0 10px 0 10px;
   }
-  .far.fa-heart{
-    margin: 0 0 0 0px;
+
+  .far.fa-heart {
+    margin: 0 0 0 0;
   }
 
   /*block cartes repas */
@@ -498,20 +509,27 @@ a {
 
 
   /*titre accueil*/
-  .titre {
+  div.titre {
     margin: 0 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .titre h1 {
     font-size: 1.7em;
     font-weight: 900;
-    margin: 30px 0 30px 30px;
+    margin: 30px 0 30px -40px;
     font-family: "Shrikhand", "sans-serif";
+    width: 78%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   /*Coeur*/
   .coeur {
-    margin: 0 0 0 0;
+    margin: 0 0px 0 0;
+    width: 5px;
   }
 
   .coeur i {
