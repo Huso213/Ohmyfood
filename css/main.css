@@ -4,6 +4,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Roboto", "sans-serif";
+  border: dashed 1px;
 }
 
 /* Animation*/
@@ -209,7 +210,6 @@ div.explorer input {
 /* Fonctionnement bouton*/
 aside.fonctionnement {
   width: 95%;
-  margin: 0 0 0 0;
   background-color: white;
 }
 
