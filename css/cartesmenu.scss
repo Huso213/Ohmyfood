@@ -416,19 +416,16 @@ a {
 
   /*titre avec coeur*/
 div.titre{
-  border: solid red 1px;
   width: 100%;
 }
   .titre h1 {
-    margin: 30px 0 30px 55px;
+    margin: 30px 0 30px 50px;
     font-size: 1.7em;
     padding: 0;
     width: 85%;
-    border: solid green;
   }
 
   .coeur {
-    border: green 1px solid;
     width: 20%;
     margin: 0 10px 0 10px;
   }
@@ -509,27 +506,32 @@ div.titre{
 
 
   /*titre accueil*/
-  div.titre {
-    margin: 0 0 0 0;
+  div.titre {  
+    border: solid red 1px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .titre h1 {
+    border: solid green 1px;
+
     font-size: 1.7em;
     font-weight: 900;
-    margin: 30px 0 30px -40px;
+    margin: 30px 0 30px 0;
     font-family: "Shrikhand", "sans-serif";
-    width: 78%;
+    width: 75%;
     display: flex;
     justify-content: flex-start;
   }
 
   /*Coeur*/
   .coeur {
+    border: solid green 1px;
+display: flex;
+justify-content: flex-start;
     margin: 0 0px 0 0;
-    width: 5px;
+    width: 15%;
   }
 
   .coeur i {
@@ -563,7 +565,11 @@ div.titre{
     height: -moz-max-content;
     height: max-content;
   }
-
+  .entrees h2,
+  .plats h2,
+  .desserts h2{
+    margin: 0 0 0 30px;
+  }
   /*Espace sur plat et dessert*/
   .plats,
   .desserts {
