@@ -516,9 +516,9 @@ div.titre{
   .titre h1 {
     border: solid green 1px;
 
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 900;
-    margin: 30px 0 30px 0;
+    margin: 30px 0 30px 17px;
     font-family: "Shrikhand", "sans-serif";
     width: 75%;
     display: flex;
@@ -568,7 +568,7 @@ justify-content: flex-start;
   .entrees h2,
   .plats h2,
   .desserts h2{
-    margin: 0 0 0 30px;
+    margin: 0 0 0 25px;
   }
   /*Espace sur plat et dessert*/
   .plats,
