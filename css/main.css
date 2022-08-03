@@ -210,11 +210,15 @@ div.explorer input {
 aside.fonctionnement {
   width: 95%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 30px 0 30px;
 }
 
 .fonctionnement,
 h2 {
-  margin: 30px 0 15px 10px;
+  margin: 30px 0 15px 20px;
 }
 
 .ensemblebouton {
@@ -390,7 +394,7 @@ div.card.cartes4 img {
 .footerdescription {
   display: flex;
   flex-direction: column;
-  margin: 0 0 20px 2em;
+  margin: 0 0 20px 2.5em;
 }
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MEDIA QUERY *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
@@ -449,9 +453,12 @@ div.card.cartes4 img {
     font-weight: 400;
   }
   /*boutons fonctionnement*/
+  aside.fonctionnement {
+    margin-top: 20px;
+  }
   /*titre Fonctionnement*/
-  .fonctionnement h2 {
-    margin: 40px 0 30px 20px;
+  .fonctionnement, h2 {
+    margin: 0px 0 30px 15px;
   }
   .ensemblebouton {
     display: flex;
@@ -486,7 +493,7 @@ div.card.cartes4 img {
     margin: 0;
   }
   .footerdescription {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 35px;
   }
 }
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Version mobile*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
@@ -528,12 +535,11 @@ div.card.cartes4 img {
     padding-bottom: 3em;
   }
   /*Fonctionnement*/
-  .fonctionnement {
+  aside.fonctionnement {
     width: 95%;
-    justify-content: flex-start;
-    margin: 10px 0 3em 15px;
+    margin: 10px 0 0em 17px;
   }
-  .fonctionnement h2 {
+  aside.fonctionnement h2 {
     margin: 2em 0 20px 10px;
   }
   .ensemblebouton {
