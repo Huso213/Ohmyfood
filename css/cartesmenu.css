@@ -13,6 +13,7 @@
   background-color: white;
   display: flex;
   width: 100%;
+  height: 5em;
   align-items: center;
   justify-content: flex-start;
 }
@@ -31,7 +32,7 @@
 }
 
 .fas.fa-arrow-left {
-  margin: 20px 0 0 10px;
+  margin: 20px 0 0 20px;
   font-size: 2em;
   display: flex;
   justify-content: flex-start;
@@ -50,6 +51,7 @@ h5 {
   font-family: "Shrikhand", "sans-serif";
   font-size: 2.8em;
   display: flex;
+  margin: 20px 0 0 0;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -91,17 +93,19 @@ div.restaurant img {
 
 /*Titres*/
 div.titre {
-  width: 98%;
+  width: 96%;
   display: flex;
   justify-content: space-between;
 }
 
 .titre h1 {
-  padding: 1em;
+  padding: 1em 15px;
   font-size: 1.7em;
   font-weight: 900;
   font-family: "Shrikhand", "sans-serif";
   width: 96%;
+  display: flex;
+  align-self: start;
 }
 
 /*Coeur*/
@@ -193,7 +197,7 @@ div.titre {
           animation: fondu 2s ease-in-out;
 }
 
-/*Animation Keyframes*/
+/*Animation cartes Keyframes*/
 @-webkit-keyframes fondu {
   0% {
     transform: translateZ(-800px) rotateX(90deg);
@@ -395,7 +399,7 @@ a {
 .footerdescription {
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 3em;
+  margin: 0 0 0 40px;
 }
 
 .footerdescription a .fas.fa-ustensils {
@@ -417,7 +421,7 @@ a {
     width: 100%;
   }
   .titre h1 {
-    margin: 30px 0 30px 50px;
+    margin: 30px 0 30px 1.9em;
     font-size: 1.7em;
     padding: 0;
     width: 85%;
@@ -457,16 +461,19 @@ a {
   .conteneur {
     margin: 0;
     background-color: white;
-    height: 70px;
+    height: 60px;
   }
   .conteneur a.titre {
     margin: 0;
     font-size: 0.8em;
   }
+  .titre h5 {
+    margin: 0;
+  }
   /*fleche*/
   .fas.fa-arrow-left {
-    margin: 20px 0 0 10px;
-    font-size: 1.2em;
+    margin: 20px 0 0 20px;
+    font-size: 1.3em;
     justify-content: center;
   }
   /*Carte menu*/
@@ -484,26 +491,24 @@ a {
   /*titre accueil*/
   div.titre {
     width: 90%;
-    border: solid;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
   .titre h1 {
-    border: solid red 1px;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 900;
-    margin: 30px 0 30px 0px;
+    margin: 30px 0 30px 5px;
     font-family: "Shrikhand", "sans-serif";
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: flex-start;
   }
   /*Coeur*/
   .coeur {
     display: flex;
-    justify-content: center;
-    margin: 0 40px 0 0;
-    width: 13%;
+    justify-content: flex-end;
+    margin: 0 20px 0 -10px;
+    width: 19%;
   }
   .coeur i {
     font-size: 1.7em;
@@ -524,11 +529,13 @@ a {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+    margin: 0;
   }
   .entrees h2,
 .plats h2,
 .desserts h2 {
-    margin: 0 0 0 35px;
+    font-size: 1.4em;
+    margin: 0 0 0 1.5em;
   }
   /*Espace sur plat et dessert*/
   .plats,
@@ -654,7 +661,7 @@ a {
     width: 100%;
   }
   .footerdescription {
-    margin: 0 0 30px 35px;
+    margin: 0 0 30px 45px;
     align-items: flex-start;
     display: flex;
   }
